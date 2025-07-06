@@ -39,7 +39,7 @@ class Config:
     """
     # Set to True to use a file dialog to select the PSCAD project file.
     # If False, PROJECT_PATH and PROJECT_NAME must be set manually.
-    USE_FILE_DIALOG_SELECTOR = False
+    USE_FILE_DIALOG_SELECTOR = True
 
     # --- Project Details (Required if USE_FILE_DIALOG_SELECTOR is False) ---
     PROJECT_NAME: str = 'Modelo_LOOP_FP1_PEN025'
@@ -55,7 +55,7 @@ class Config:
     # --- PSCAD & Output Settings ---
     COMPILER: str = 'gf46'
     # Supported formats: 'csv', 'parquet', 'mat', 'pkl', 'npy'
-    OUTPUT_FORMAT: str = 'parquet'
+    OUTPUT_FORMAT: str = 'csv'
     # If True, the output file will include a header with column names.
     INCLUDE_HEADER_IN_OUTPUT: bool = True
     # The name of the component type in PSCAD to modify (e.g., a constant).
